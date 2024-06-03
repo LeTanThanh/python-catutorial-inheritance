@@ -1,3 +1,4 @@
+from person import Person
 from employee import Employee
 
 # Python Inheritance
@@ -6,3 +7,18 @@ from employee import Employee
 
 employee = Employee("John", "Python Developer")
 print(employee.greet())
+
+## Inheritance terminology
+
+## type vs. isinstance
+
+person = Person("Jahe")
+print(type(person))   # <class person.Person>
+
+employee = Employee("John", "Python Developer")
+print(type(employee)) # <class employee.Employee>
+
+print(isinstance(person, Person))     # True
+print(isinstance(employee, Person))   # True
+print(isinstance(employee, Employee)) # True
+print(isinstance(person, Employee))   # False
